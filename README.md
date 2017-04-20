@@ -11,13 +11,7 @@ Authors:
 ## Prerequisites
 
 ### Software / Package
-
-#### TopHat or STAR
-
-* TopHat & TopHat-Fusion
-    + [TopHat](http://ccb.jhu.edu/software/tophat/index.shtml) 2.0.9
-    + [TopHat-Fusion](http://ccb.jhu.edu/software/tophat/fusion_index.html) included in TopHat 2.0.9
-* STAR (optional)
+* STAR 
     + [STAR](https://github.com/alexdobin/STAR) 2.4.0j
 
 #### Others
@@ -30,7 +24,7 @@ Authors:
 
 ## Usage
 
-
+```bash 
 Usage: python3 CRIT.py [options]
 
 Options:
