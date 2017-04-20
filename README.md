@@ -30,10 +30,8 @@ Authors:
 
 ## Usage
 
-```bash
-CIRCexplorer.py 1.1.10 -- circular RNA analysis toolkits.
 
-Usage: CIRCexplorer.py [options]
+Usage: python3 CRIT.py [options]
 
 Options:
     -h --help                      Show this screen.
@@ -42,7 +40,7 @@ Options:
     -j JUNC --junc=JUNC            STAR Chimeric junction file. (used in STAR mapping)
     -g GENOME --genome=GENOME      Genome FASTA file.
     -r REF --ref=REF               Gene annotation.
-    -o PREFIX --output=PREFIX      Output prefix [default: CIRCexplorer].
+    -o PREFIX --output=PREFIX      Output prefix [default: ].
     --tmp                          Keep temporary files.
     --no-fix                       No-fix mode (useful for species with poor gene annotations)
 ```
@@ -57,7 +55,7 @@ python3
 
 ### Note
 
-* ref.txt is in the format ([Gene Predictions and RefSeq Genes with Gene Names](https://genome.ucsc.edu/FAQ/FAQformat.html#format9)) below (see details in [the example file](https://github.com/YangLab/CIRCexplorer/blob/master/example/ref_example.txt))
+* ref.txt is in the format ([Gene Predictions and RefSeq Genes with Gene Names](https://genome.ucsc.edu/FAQ/FAQformat.html#format9)) below (see details in [the example file]())
 
 | Field       | Description                   |
 | :---------: | :---------------------------- |
