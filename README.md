@@ -11,6 +11,9 @@ Authors:
 ## Prerequisites
 
 ### Software / Package
+[STAR](https://github.com/alexdobin/STAR) Aligner: v2.5.2b
+
+
 
 #### Others
 
@@ -34,8 +37,7 @@ Identifying and Characterizing Differentially Spliced circular RNAs between
 two samples
 
 Required arguments:
-  -h, --help            show this help message and exit
-  
+=================== 
   -s1 S1, --sample1 S1  fastq files for sample_1. Replicates are separated by
                         comma. Paired-end reads are separated by colon.
                         e.g.,s1-1.fastq,s1-2.fastq for single-end read. s1-1.R
@@ -67,17 +69,21 @@ Required arguments:
   -ref REFSEQ, --refseq REFSEQ
                         Transcriptome in refseq format. e.g., hg38.ref.txt
                         
-  --threadNumber 
+ optional arguments:
+====================
+
+   -h, --help            show this help message and exit
+   --threadNumber 
                         Number of threads for multi-threading feature [default = 4]
 
---deltaPSI DELTAPSI   Delta PSI cutoff. i.e., significant event must show
+  --deltaPSI DELTAPSI   Delta PSI cutoff. i.e., significant event must show
                         bigger deltaPSI than this cutoff [default = 0.05]
                         
   --highConfidence HIGHCONFIDENCE
                         Minimum number of circular junction counts required [default = 1]
                         
   --libType {fr-unstranded,fr-firststrand,fr-secondstrand}
-                        library type used Tophat aligner [default ='fr-unstranded']
+                        library type used by Tophat aligner [default ='fr-unstranded']
                         
   --keepTemp {Y,N}      Keep temp files or not  [default='Y']
 
@@ -87,7 +93,8 @@ Required arguments:
 
 
 ```bash
-python3 
+python3 CRIT.py -o PEtest -t PE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.txt --genomeIndex /media/bio/data/STARIndex/hg19 -s1 testData/231ESRP.25K.rep-1.R1.fastq:testData/231ESRP.25K.rep-1.R2.fastq,testData/231ESRP.25K.rep-2.R1.fastq:testData/231ESRP.25K.rep-2.R2.fastq -s2 testData/231EV.25K.rep-1.R1.fastq:testData/231EV.25K.rep-1.R2.fastq,testData/231EV.25K.rep-2.R1.fastq:testData/231EV.25K.rep-2.R2.fastq -gtf testData/test.gtf --threadNumber 12 
+
 ```
 
 
