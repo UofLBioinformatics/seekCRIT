@@ -23,10 +23,63 @@ Authors:
 ## Usage
 
 ```bash 
-Usage: python3 CRIT.py [options]
+usage: CRIT.py [-h] -s1 S1 -s2 S2 -gtf GTF -o OUTDIR -t {SE,PE} --aligner
+               ALIGNER --genomeIndex GENOMEINDEX -fa FASTA -ref REFSEQ
+               [--threadNumber numThreads]
+               [--deltaPSI DELTAPSI] [--highConfidence HIGHCONFIDENCE]
+               [--libType {fr-unstranded,fr-firststrand,fr-secondstrand}]
+               [--keepTemp {Y,N}]
 
-Options:
-    -h --help                    
+Identifying and Characterizing Differentially Spliced circular RNAs between
+two samples
+
+optional arguments:
+  -h, --help            show this help message and exit
+  
+  -s1 S1, --sample1 S1  fastq files for sample_1. Replicates are separated by
+                        comma. Paired-end reads are separated by colon.
+                        e.g.,s1-1.fastq,s1-2.fastq for single-end read. s1-1.R
+                        1.fastq:s1-1.R2.fastq,s1-2.R1.fastq:s1-2.R2.fastq for
+                        single-end read
+                        
+  -s2 S2, --sample2 S2  fastq files for sample_2. Replicates are separated by
+                        comma. Paired-end reads are separated by colon.
+                        e.g.,s2-1.fastq,s2-2.fastq for single-end read. s2-1.R
+                        1.fastq:s2-1.R2.fastq,s2-2.R1.fastq:s2-2.R2.fastq for
+                        single-end read
+                        
+  -gtf GTF, --gtf GTF   The gtf annotation file. e.g., hg38.gtf
+  
+  -o OUTDIR, --output OUTDIR
+                        Output directory
+                        
+  -t {SE,PE}, --readType {SE,PE}
+                        Read type. SE for Single-end read, PE for Paired-end read
+                        
+  --aligner ALIGNER     Aligner to use
+  
+  --genomeIndex GENOMEINDEX
+                        Genome indexes for the aligner
+                        
+  -fa FASTA, --fasta FASTA
+                        Genome sequence. e.g., hg38.fa
+                        
+  -ref REFSEQ, --refseq REFSEQ
+                        Transcriptome in refseq format. e.g., hg38.ref.txt
+                        
+  --threadNumber 
+                        Number of threads for multi-threading feature.
+
+--deltaPSI DELTAPSI   Delta PSI cutoff. i.e., significant event must show
+                        bigger deltaPSI than this cutoff
+                        
+  --highConfidence HIGHCONFIDENCE
+                        Minimum number of circular junction counts required
+                        
+  --libType {fr-unstranded,fr-firststrand,fr-secondstrand}
+                        Minimum number of circular junction counts required
+                        
+  --keepTemp {Y,N}      Keep temp files or not
 
 ```
 
