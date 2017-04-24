@@ -33,7 +33,7 @@ usage: CRIT.py [-h] -s1 S1 -s2 S2 -gtf GTF -o OUTDIR -t {SE,PE} --aligner
 Identifying and Characterizing Differentially Spliced circular RNAs between
 two samples
 
-optional arguments:
+Required arguments:
   -h, --help            show this help message and exit
   
   -s1 S1, --sample1 S1  fastq files for sample_1. Replicates are separated by
@@ -56,7 +56,7 @@ optional arguments:
   -t {SE,PE}, --readType {SE,PE}
                         Read type. SE for Single-end read, PE for Paired-end read
                         
-  --aligner ALIGNER     Aligner to use
+  --aligner ALIGNER     Aligner to use. e.g. STAR, Tophat 
   
   --genomeIndex GENOMEINDEX
                         Genome indexes for the aligner
@@ -68,18 +68,18 @@ optional arguments:
                         Transcriptome in refseq format. e.g., hg38.ref.txt
                         
   --threadNumber 
-                        Number of threads for multi-threading feature.
+                        Number of threads for multi-threading feature [default = 4]
 
 --deltaPSI DELTAPSI   Delta PSI cutoff. i.e., significant event must show
-                        bigger deltaPSI than this cutoff
+                        bigger deltaPSI than this cutoff [default = 0.05]
                         
   --highConfidence HIGHCONFIDENCE
-                        Minimum number of circular junction counts required
+                        Minimum number of circular junction counts required [default = 1]
                         
   --libType {fr-unstranded,fr-firststrand,fr-secondstrand}
-                        Minimum number of circular junction counts required
+                        library type used Tophat aligner [default ='fr-unstranded']
                         
-  --keepTemp {Y,N}      Keep temp files or not
+  --keepTemp {Y,N}      Keep temp files or not  [default='Y']
 
 ```
 
