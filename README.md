@@ -1,4 +1,4 @@
-**NOTE: NOT RELEASED YET**
+**NOTE: UNDER CONSTRUCTION, the actual software is NOT released yet**
 
 # seekCRIT
 seek for circular RNA in transcriptome (identifies deferentially expressed circRNAs between two samples)
