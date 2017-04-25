@@ -73,7 +73,7 @@ Required arguments:
 ====================
 
    -h, --help            show this help message and exit
-   --threadNumber 
+   --threadNumber numberOfThreadsk
                         Number of threads for multi-threading feature [default = 4]
 
   --deltaPSI DELTAPSI   Delta PSI cutoff. i.e., significant event must show
@@ -82,7 +82,7 @@ Required arguments:
   --highConfidence HIGHCONFIDENCE
                         Minimum number of circular junction counts required [default = 1]
                         
-  --libType {fr-unstranded,fr-firststrand,fr-secondstrand}
+  --libType  {fr-unstranded,fr-firststrand,fr-secondstrand}
                         library type used by Tophat aligner [default ='fr-unstranded']
                         
   --keepTemp {Y,N}      Keep temp files or not  [default='Y']
