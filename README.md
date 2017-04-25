@@ -1,11 +1,13 @@
+**NOTE: NOT RELEASED YET**
+
 # seekCRIT
 seek for circular RNA in transcriptome (identifies deferentially expressed circRNAs between two samples)
 
-Version: 
+Version: (no official version yet)
 
-Last Modified: 2017-##-##
+Last Modified: 2017-04-25
 
-Authors: 
+Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php), University of Louisville
 
 
 ## Prerequisites
