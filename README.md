@@ -90,44 +90,47 @@ Required arguments:
   --keepTemp {Y,N}      Keep temp files or not  [default='Y']
 
 ```
-
 ### Example
-
-
+#### Paired-end reads
 ```bash
 python3 CRIT.py -o PEtest -t PE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.txt --genomeIndex /media/bio/data/STARIndex/hg19 -s1 testData/231ESRP.25K.rep-1.R1.fastq:testData/231ESRP.25K.rep-1.R2.fastq,testData/231ESRP.25K.rep-2.R1.fastq:testData/231ESRP.25K.rep-2.R2.fastq -s2 testData/231EV.25K.rep-1.R1.fastq:testData/231EV.25K.rep-1.R2.fastq,testData/231EV.25K.rep-2.R1.fastq:testData/231EV.25K.rep-2.R2.fastq -gtf testData/test.gtf --threadNumber 12 
+```
+#### Single-end reads
 
+```bash
+python3 CRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.txt --genomeIndex /media/bio/data/STARIndex/hg19 -s1 testData/231ESRP.25K.rep-1.R1.fastq,testData/231ESRP.25K.rep-1.R2.fastq,testData/231ESRP.25K.rep-2.R1.fastq,testData/231ESRP.25K.rep-2.R2.fastq -s2 testData/231EV.25K.rep-1.R1.fastq,testData/231EV.25K.rep-1.R2.fastq,testData/231EV.25K.rep-2.R1.fastq,testData/231EV.25K.rep-2.R2.fastq -gtf testData/test.gtf --threadNumber 12 
 ```
 
 
-### Note
 
-* ref.txt is in the format ([Gene Predictions and RefSeq Genes with Gene Names](https://genome.ucsc.edu/FAQ/FAQformat.html#format9)) below (see details in [the example file]())
-
-| Field       | Description                   |
-| :---------: | :---------------------------- |
-| geneName    | Name of gene                  |
-| isoformName | Name of isoform               |
-| chrom       | Reference sequence            |
-| strand      | + or - for strand             |
-| txStart     | Transcription start position  |
-| txEnd       | Transcription end position    |
-| cdsStart    | Coding region start           |
-| cdsEnd      | Coding region end             |
-| exonCount   | Number of exons               |
-| exonStarts  | Exon start positions          |
-| exonEnds    | Exon end positions            |
-
-* hg19.fa is genome sequence in FASTA format.
 
 ## Output
 
 See details in [the example file]()
 
-| Field       | Description                           |
-| :---------: | :------------------------------------ |
-| chrom       | Chromosome                            |
-
+| Field                           | Description                                                                  |
+| :------------------------------:|:---------------------------------------------------------------------------- |
+| chrom                           | chromosome                                                                   |
+| circRNA_start                   | circular RNA 5' end position                                                 |
+| circRNA_end                     | circular RNA 3' end position                                                 |
+| strand                          | DNA strand  [+|-]                                                            |
+| exonCount                       | number of exons included in the circular RNA transcript                      |
+| exonSizes                       | size of exons included in the circular RNA transcript                        |
+| exonOffsets                     | offsets of exons included in the circular RNA transcript  					         |  
+| circType					          	  | 		        						                    		                             |
+| geneName						            | 		        		                    						                             |
+| isoformName					            | 		                             								                             |
+| exonIndexOrIntronIndex		      |                     		        								                             |
+| FlankingIntrons			        	  | 		                             								                             |
+| CircularJunctionCount_Sample_1  | read count of the circular junction in sample # 1                            |
+| LinearJunctionCount_Sample_1	  | 	                        											                             |
+| CircularJunctionCount_Sample_2  | 	                        											                             |
+| LinearJunctionCount_Sample_2	  | 		                        										                             |
+| PBI_Sample_1					          | 		                        										                             |
+| PBI_Sample_2				         	  | 				                        								                             |
+| deltaPBI(PBI_1-PBI_2)			      | 			                            							                             |
+| pValue						              | 				                        								                             |
+| FDR							                |                          												                             |
 
 
 ## License
