@@ -28,7 +28,7 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 ## Usage
 
 ```bash 
-usage: CRIT.py [-h] -s1 S1 -s2 S2 -gtf GTF -o OUTDIR -t {SE,PE} --aligner
+usage: seekCRIT.py [-h] -s1 S1 -s2 S2 -gtf GTF -o OUTDIR -t {SE,PE} --aligner
                ALIGNER --genomeIndex GENOMEINDEX -fa FASTA -ref REFSEQ
                [--threadNumber numThreads]
                [--deltaPSI DELTAPSI] [--highConfidence HIGHCONFIDENCE]
