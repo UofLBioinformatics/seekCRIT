@@ -16,15 +16,15 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 - [STAR](https://github.com/alexdobin/STAR) Aligner: v2.5.2b
 
 #### Others
-- [pysam](https://github.com/pysam-developers/pysam) 
+- [pysam](https://github.com/pysam-developers/pysam) >=0.9.1.4
 
-- [numpy](https://github.com/numpy/numpy) 
+- [numpy](https://github.com/numpy/numpy) >=1.11.2
 
 - [scipy](https://docs.scipy.org/doc/scipy/reference/dev/index.html)
 
-- [fisher](https://pypi.python.org/pypi/fisher/)
+- [fisher](https://pypi.python.org/pypi/fisher/) (Fisher’s exact test)
 
-- [mne](https://martinos.org/mne/dev/generated/mne.stats.fdr_correction.html)
+- [mne](https://github.com/mne-tools/mne-python/tree/master/mne) (FDR calculation)
 
 
 ## Installation
