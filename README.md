@@ -21,12 +21,17 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 [pysam](https://github.com/pysam-developers/pysam) 
 
 [numpy](https://github.com/numpy/numpy) 
+
 [scipy](https://docs.scipy.org/doc/scipy/reference/dev/index.html)
+
 [fisher](https://pypi.python.org/pypi/fisher/)
+
 [mne](https://martinos.org/mne/dev/generated/mne.stats.fdr_correction.html)
 
+
 ## Installation
-TBA
+git clone https://github.com/UofLBioinformatics/seekCRIT.git
+cd seekCRIT
 
 
 ## Usage
