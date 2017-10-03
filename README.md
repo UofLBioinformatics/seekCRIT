@@ -31,6 +31,7 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 
 ## Installation
 git clone https://github.com/UofLBioinformatics/seekCRIT.git
+
 cd seekCRIT
 
 
