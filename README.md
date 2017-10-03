@@ -18,9 +18,9 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 
 
 #### Others
-[pysam](https://github.com/pysam-developers/pysam) 
+- [pysam](https://github.com/pysam-developers/pysam) 
 
-[numpy](https://github.com/numpy/numpy) 
+-[numpy](https://github.com/numpy/numpy) 
 
 [scipy](https://docs.scipy.org/doc/scipy/reference/dev/index.html)
 
