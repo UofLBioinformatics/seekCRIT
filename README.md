@@ -13,20 +13,18 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 ## Prerequisites
 
 ### Software / Package
-[STAR](https://github.com/alexdobin/STAR) Aligner: v2.5.2b
-
-
+- [STAR](https://github.com/alexdobin/STAR) Aligner: v2.5.2b
 
 #### Others
 - [pysam](https://github.com/pysam-developers/pysam) 
 
--[numpy](https://github.com/numpy/numpy) 
+- [numpy](https://github.com/numpy/numpy) 
 
-[scipy](https://docs.scipy.org/doc/scipy/reference/dev/index.html)
+- [scipy](https://docs.scipy.org/doc/scipy/reference/dev/index.html)
 
-[fisher](https://pypi.python.org/pypi/fisher/)
+- [fisher](https://pypi.python.org/pypi/fisher/)
 
-[mne](https://martinos.org/mne/dev/generated/mne.stats.fdr_correction.html)
+- [mne](https://martinos.org/mne/dev/generated/mne.stats.fdr_correction.html)
 
 
 ## Installation
