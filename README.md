@@ -139,7 +139,7 @@ python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.
 
 ## Output
 
-See details in [the example file]()
+See details in [the example file](https://github.com/UofLBioinformatics/seekCRIT/blob/master/example/circRNAs.pVal.FDR.txt)
 
 | Field                           | Description                                                                  |
 | :------------------------------:|:---------------------------------------------------------------------------- |
