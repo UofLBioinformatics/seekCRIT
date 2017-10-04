@@ -149,7 +149,7 @@ See details in [the example file](https://github.com/UofLBioinformatics/seekCRIT
 | chrom                           | chromosome                                                                   |
 | circRNA_start                   | circular RNA 5' end position                                                 |
 | circRNA_end                     | circular RNA 3' end position                                                 |
-| strand                          | DNA strand  (+|-)                                                            |
+| strand                          | DNA strand  (+/-)                                                            |
 | exonCount                       | number of exons included in the circular RNA transcript                      |
 | exonSizes                       | size of exons included in the circular RNA transcript                        |
 | exonOffsets                     | offsets of exons included in the circular RNA transcript  					         |  
