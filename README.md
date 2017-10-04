@@ -126,7 +126,7 @@ python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.
 | geneName                        | Name of gene                                                                 |
 | isoform_name                    | name of isoform                                                              |
 | chrom                           | chromosme                                                                    |
-| strand                          |  strand  [+|-]                                                               |
+| strand                          |  strand  (+|-)                                                             |
 | txStart                         | Transcription start position                                                 |
 | txEnd                           | Transcription end position                                                   |
 | cdsStart                        |Coding region end   		                                                       |
@@ -146,7 +146,7 @@ See details in [the example file]()
 | chrom                           | chromosome                                                                   |
 | circRNA_start                   | circular RNA 5' end position                                                 |
 | circRNA_end                     | circular RNA 3' end position                                                 |
-| strand                          | DNA strand  [+|-]                                                            |
+| strand                          | DNA strand  (+|-)                                                            |
 | exonCount                       | number of exons included in the circular RNA transcript                      |
 | exonSizes                       | size of exons included in the circular RNA transcript                        |
 | exonOffsets                     | offsets of exons included in the circular RNA transcript  					         |  
