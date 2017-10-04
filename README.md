@@ -134,7 +134,7 @@ python3 CRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.
 | exonStarts					            | 		 Exon start positions       								                             |
 | exonEnds						            | 		    Exon end positions           						                             |
 
-- it is not obligatory to provide REFSEQ file, we made script (GTFtoREFSEQ) to convert from gtf to refseq.
+- It is not obligatory to provide REFSEQ file, we made script (GTFtoREFSEQ) to convert from gtf to refseq that is used in the main code if no refseq file is provided.
 
 
 ## Output
