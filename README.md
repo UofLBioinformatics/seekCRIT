@@ -129,7 +129,7 @@ python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.
 | geneName                        | Name of gene                                                                 |
 | isoform_name                    | name of isoform                                                              |
 | chrom                           | chromosme                                                                    |
-| strand                          |  strand  (+|-)                                                             |
+| strand                          |  strand  (+/-)                                                             |
 | txStart                         | Transcription start position                                                 |
 | txEnd                           | Transcription end position                                                   |
 | cdsStart                        |Coding region end   		                                                       |
