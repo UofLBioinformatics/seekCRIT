@@ -119,7 +119,7 @@ python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.
 ```
 
 ## Note
-- Transcriptome should be in refseq format below:
+- Transcriptome should be in refseq format below (see more details in the [example](https://github.com/UofLBioinformatics/seekCRIT/blob/master/example/hg19.ref.txt) ):
 
 | Field                           | Description                                                                  |
 | :------------------------------:|:---------------------------------------------------------------------------- |
