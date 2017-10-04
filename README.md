@@ -29,14 +29,16 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 
 ## Installation
 1 Download seekCRIT
+```bash
 git clone https://github.com/UofLBioinformatics/seekCRIT.git
 
 cd seekCRIT
+```
 
 2 install required packages
-
+```bash
 pip install -r Prerequisites.txt
-
+```
 
 
 
