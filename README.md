@@ -9,6 +9,8 @@ Last Modified: 2017-06-02
 
 Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php), University of Louisville, [Kentucky Biomedical Research Infrastructure Network (KBRIN)](http://louisville.edu/research/kbrin/)
 
+## A schematic flow shows the pipeline
+![pipeline](https://github.com/UofLBioinformatics/seekCRIT/blob/master/flow.png)
 
 ## Prerequisites
 
