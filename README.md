@@ -118,7 +118,23 @@ python3 CRIT.py -o PEtest -t PE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.
 python3 CRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.txt --genomeIndex /media/bio/data/STARIndex/hg19 -s1 testData/231ESRP.25K.rep-1.R1.fastq,testData/231ESRP.25K.rep-1.R2.fastq,testData/231ESRP.25K.rep-2.R1.fastq,testData/231ESRP.25K.rep-2.R2.fastq -s2 testData/231EV.25K.rep-1.R1.fastq,testData/231EV.25K.rep-1.R2.fastq,testData/231EV.25K.rep-2.R1.fastq,testData/231EV.25K.rep-2.R2.fastq -gtf testData/test.gtf --threadNumber 12 
 ```
 
+## Note
+Transcriptome should be in refseq format below:
 
+| Field                           | Description                                                                  |
+| :------------------------------:|:---------------------------------------------------------------------------- |
+| geneName                        | Name of gene                                                                 |
+| isoform_name                    | name of isoform                                                              |
+| chrom                           | chromosme                                                                    |
+| strand                          |  strand  [+|-]                                                               |
+| txStart                         | Transcription start position                                                 |
+| txEnd                           | Transcription end position                                                   |
+| cdsStart                        |Coding region end   		                                                       |
+| exonCount						            | 		    Number of exons 		                    						                 |
+| exonStarts					            | 		 Exon start positions       								                             |
+| exonEnds						            | 		    Exon end positions           						                             |
+
+if no refseq file is available, we can use gtf file to builf refseq file.
 
 
 ## Output
