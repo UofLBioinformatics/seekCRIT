@@ -119,7 +119,7 @@ python3 CRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.
 ```
 
 ## Note
-Transcriptome should be in refseq format below:
+- Transcriptome should be in refseq format below:
 
 | Field                           | Description                                                                  |
 | :------------------------------:|:---------------------------------------------------------------------------- |
@@ -134,7 +134,7 @@ Transcriptome should be in refseq format below:
 | exonStarts					            | 		 Exon start positions       								                             |
 | exonEnds						            | 		    Exon end positions           						                             |
 
-if no refseq file is available, we can use gtf file to builf refseq file.
+- it is not obligatory to provide REFSEQ file, we made script (GTFtoREFSEQ) to convert from gtf to refseq.
 
 
 ## Output
