@@ -124,9 +124,11 @@ python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.
 ```
 #### Running testrun.sh
 
-In order to run testrun.sh, first dowload [rn6.fasta file](https://www.ensembl.org/Rattus_norvegicus/Info/Index) and [gtf annotation for Rattus_norvegicus genome](https://www.ncbi.nlm.nih.gov/).
+In order to run testrun.sh:
 
-you can now run testrun.sh to test the installation and the dependencies of seekCRIT and run it in [CRTL12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/CTRL.fastq) and [IR12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/IR12.fastq):
+- Dowload genome sequence in FASTA format for Rattus_norvegicus genome ( It can be downloaded from [UCSC Genome Browser](https://genome.ucsc.edu/)) 
+- Dowload [gtf annotation for Rattus_norvegicus genome](https://www.ncbi.nlm.nih.gov/).
+- Run testrun.sh to test the installation and the dependencies of seekCRIT and also it will test the installation with  [CRTL12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/CTRL.fastq) and [IR12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/IR12.fastq):
 ```bash
  ./testrun.sh Rattus_norvegicus.Ensembl.rn6.r84.gtf rn6.fa
 ```
@@ -135,7 +137,6 @@ you can now run testrun.sh to test the installation and the dependencies of seek
 
 
 ## Note
-- hg19.fasta is genome sequence in FASTA format and can be downloaded from [UCSC Genome Browser](https://genome.ucsc.edu/).
 - Transcriptome should be in refseq format below (see more details in the [example](https://github.com/UofLBioinformatics/seekCRIT/blob/master/example/hg19.ref.txt) ):
 
 | Field                           | Description                                                                  |
