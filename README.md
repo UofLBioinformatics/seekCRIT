@@ -37,7 +37,7 @@ git clone https://github.com/UofLBioinformatics/seekCRIT.git
 cd seekCRIT
 ```
 
-2 install required packages
+2 Install required packages
 ```bash
 pip install -r Prerequisites.txt
 ```
