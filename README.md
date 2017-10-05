@@ -124,6 +124,10 @@ python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.
 ```
 #### Running testrun.sh
 
+In order to run testrun.sh, first dowload [rn6.fasta file](https://www.ensembl.org/Rattus_norvegicus/Info/Index) and [gtf annotation for Rattus_norvegicus genome](ftp://ftp.ensembl.org/pub/release-75/gtf/rattus_norvegicus).
+
+
+
 
 
 
