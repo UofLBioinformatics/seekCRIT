@@ -24,7 +24,7 @@ STAR --runThreadN 4 --runMode genomeGenerate --genomeDir genomeindex/ --genomeFa
 echo "Starting testing seekCRIT... "
 
 
-python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa $2 -ref ref/rn6.ref.txt --genomeIndex genomeindex -s1 testData/CTRL.fastq -s2 testData/IR12.fastq -gtf $1 --threadNumber 12
+python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa $2 -ref ref/rn6.ref.txt --genomeIndex genomeindex -s1 testData/CRTL12.fastq -s2 testData/IR12.fastq -gtf $1 --threadNumber 12
 echo "seekCRIT tested with success "
 
 
