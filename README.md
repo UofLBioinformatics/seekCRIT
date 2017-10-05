@@ -41,7 +41,10 @@ cd seekCRIT
 ```bash
 pip install -r Prerequisites.txt
 ```
-
+3 Install seekCRIT
+```bash
+python setup.py install
+```
 
 
 ## Usage
