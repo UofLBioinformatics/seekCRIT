@@ -128,9 +128,9 @@ In order to run testrun.sh:
 
 - Dowload genome sequence in FASTA format for Rattus_norvegicus genome ( It can be downloaded from [UCSC Genome Browser](https://genome.ucsc.edu/)) 
 - Dowload [gtf annotation for Rattus_norvegicus genome](https://www.ncbi.nlm.nih.gov/).
-- Run testrun.sh to test the installation and the dependencies of seekCRIT and also it will test the installation with  [CRTL12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/CTRL.fastq) and [IR12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/IR12.fastq):
+- Run testrun.sh to test the installation and the dependencies of seekCRIT and also it will test the installation with  [CRTL12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/CTRL.fastq) and [IR12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/IR12.fastq) by specifying the path for FASTA and gtf files:
 ```bash
- ./testrun.sh Rattus_norvegicus.Ensembl.rn6.r84.gtf rn6.fa
+ ./testrun.sh gtf/Rattus_norvegicus.Ensembl.rn6.r84.gtf fasta/rn6.fa
 ```
 
 
