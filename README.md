@@ -45,7 +45,8 @@ pip install -r Prerequisites.txt
 ```bash
 python setup.py install
 ```
-4 testing seekCRIT zith testrun.sh
+4 testing seekCRIT with testrun.sh
+
 In order to run testrun.sh:
 
 - Dowload genome sequence in FASTA format for Rattus_norvegicus genome ( It can be downloaded from [UCSC Genome Browser](https://genome.ucsc.edu/)) 
