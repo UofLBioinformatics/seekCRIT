@@ -45,7 +45,15 @@ pip install -r Prerequisites.txt
 ```bash
 python setup.py install
 ```
+4 testing seekCRIT zith testrun.sh
+In order to run testrun.sh:
 
+- Dowload genome sequence in FASTA format for Rattus_norvegicus genome ( It can be downloaded from [UCSC Genome Browser](https://genome.ucsc.edu/)) 
+- Dowload [gtf annotation for Rattus_norvegicus genome](https://www.ncbi.nlm.nih.gov/).
+- Run testrun.sh to test the installation and the dependencies of seekCRIT and also it will test the installation with  [CRTL12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/CTRL.fastq) and [IR12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/IR12.fastq) by specifying the path for FASTA and gtf files:
+```bash
+ ./testrun.sh gtf/Rattus_norvegicus.Ensembl.rn6.r84.gtf fasta/rn6.fa
+```
 
 ## Usage
 
@@ -122,16 +130,7 @@ python3 seekCRIT.py -o PEtest -t PE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.
 ```bash
 python3 seekCRIT.py -o SEtest -t SE --aligner STAR -fa fa/hg19.fa -ref ref/hg19.ref.txt --genomeIndex /media/bio/data/STARIndex/hg19 -s1 testData/231ESRP.25K.rep-1.R1.fastq,testData/231ESRP.25K.rep-1.R2.fastq,testData/231ESRP.25K.rep-2.R1.fastq,testData/231ESRP.25K.rep-2.R2.fastq -s2 testData/231EV.25K.rep-1.R1.fastq,testData/231EV.25K.rep-1.R2.fastq,testData/231EV.25K.rep-2.R1.fastq,testData/231EV.25K.rep-2.R2.fastq -gtf testData/test.gtf --threadNumber 12 
 ```
-#### Running testrun.sh
 
-In order to run testrun.sh:
-
-- Dowload genome sequence in FASTA format for Rattus_norvegicus genome ( It can be downloaded from [UCSC Genome Browser](https://genome.ucsc.edu/)) 
-- Dowload [gtf annotation for Rattus_norvegicus genome](https://www.ncbi.nlm.nih.gov/).
-- Run testrun.sh to test the installation and the dependencies of seekCRIT and also it will test the installation with  [CRTL12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/CTRL.fastq) and [IR12.fastq](https://github.com/UofLBioinformatics/seekCRIT/blob/master/seekCRIT/testData/IR12.fastq) by specifying the path for FASTA and gtf files:
-```bash
- ./testrun.sh gtf/Rattus_norvegicus.Ensembl.rn6.r84.gtf fasta/rn6.fa
-```
 
 
 
