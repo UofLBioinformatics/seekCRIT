@@ -39,7 +39,7 @@ cd seekCRIT
 
 2 Install required packages
 ```bash
-pip install -r Prerequisites.txt
+pip3 install -r Prerequisites.txt
 ```
 3 Install seekCRIT
 ```bash
