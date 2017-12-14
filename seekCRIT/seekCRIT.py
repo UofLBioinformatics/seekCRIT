@@ -297,7 +297,7 @@ def detectCircRNAs():  ## detecting circular RNAs from chimeric junctions
     rTempFolder = s1rPath+str(rr+1);
     cjn = rTempFolder+'/Chimeric.out.junction'; ## chimeric junction name from STAR aligner
    
-    cmd = pythonPath +' bin/final_circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
+    cmd = pythonPath +' bin/circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
 
     oFile.write('######  detecting circular RNAs for sample_1, replicate_'+ str(rr+1)+'#####\n'+cmd+'\n#\n');
     oFile.flush();
@@ -315,7 +315,7 @@ def detectCircRNAs():  ## detecting circular RNAs from chimeric junctions
     cjn = rTempFolder+'/Chimeric.out.junction'; ## chimeric junction name from STAR aligner
 
 
-    cmd = pythonPath +' bin/final_circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
+    cmd = pythonPath +' bin/circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
 
     oFile.write('######  detecting circular RNAs for sample_2, replicate_'+ str(rr+1)+'#####\n'+cmd+'\n#\n');
     oFile.flush();
