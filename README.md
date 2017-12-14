@@ -177,11 +177,11 @@ See details in [the example file](https://github.com/UofLBioinformatics/seekCRIT
 | LinearJunctionCount_Sample_1	  | 	       read count of the linear junction in sample # 1                 											                             |
 | CircularJunctionCount_Sample_2  | 	      read count of the circular junction in sample # 2            											                             |
 | LinearJunctionCount_Sample_2	  | 		  read count of the linear junction in sample # 1                       										                             |
-| PBI_Sample_1					          | 		                        										                             |
-| PBI_Sample_2				         	  | 				                        								                             |
-| deltaPBI(PBI_1-PBI_2)			      | 			                            							                             |
-| pValue						              | 				                        								                             |
-| FDR							                |                          												                             |
+| PBI_Sample_1					          | 		  Percent Backsplicing Index for  sample # 1                       										                             |
+| PBI_Sample_2				         	  | 				 Percent Backsplicing Index for  sample # 2                         								                             |
+| deltaPBI(PBI_1-PBI_2)			      | 			 difference between PBI values of two samples                           							                             |
+| pValue						              | 				   pValue                      								                             |
+| FDR							                |               FDR           												                             |
 
 
 ## License
