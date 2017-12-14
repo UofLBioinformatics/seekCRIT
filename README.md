@@ -168,10 +168,10 @@ See details in [the example file](https://github.com/UofLBioinformatics/seekCRIT
 | exonCount                       | number of exons included in the circular RNA transcript                      |
 | exonSizes                       | size of exons included in the circular RNA transcript                        |
 | exonOffsets                     | offsets of exons included in the circular RNA transcript  					         |  
-| circType					          	  | 		        						                    		                             |
-| geneName						            | 		        		                    						                             |
-| isoformName					            | 		                             								                             |
-| exonIndexOrIntronIndex		      |                     		        								                             |
+| circType					          	  | 		    circRNA, ciRNA, ccRNA    						                    		                             |
+| geneName						            | 		    name of gene    		                    						                             |
+| isoformName					            | 		  name of isoform                           								                             |
+| exonIndexOrIntronIndex		      |         Index (start from 1) of exon (for circRNA) or intron (for ciRNA) in given isoform            		        								                             |
 | FlankingIntrons			        	  | 		                             								                             |
 | CircularJunctionCount_Sample_1  | read count of the circular junction in sample # 1                            |
 | LinearJunctionCount_Sample_1	  | 	                        											                             |
