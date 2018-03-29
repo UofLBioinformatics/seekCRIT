@@ -62,6 +62,7 @@ In order to run testrun.sh:
 usage: seekCRIT.py [-h] -s1 S1 -s2 S2 -gtf GTF -o OUTDIR -t {SE,PE} 
                --genomeIndex GENOMEINDEX -fa FASTA -ref REFSEQ
                [--threadNumber numThreads]
+               [--aligner aligner]
                [--deltaPSI DELTAPSI] [--highConfidence HIGHCONFIDENCE]
                [--libType {fr-unstranded,fr-firststrand,fr-secondstrand}]
                [--keepTemp {Y,N}]
@@ -106,6 +107,7 @@ Required arguments:
    -h, --help            show this help message and exit
    --threadNumber numberOfThreadsk
                         Number of threads for multi-threading feature [default = 4]
+  --aligner aligner     aligner to use(for now it supports only STAR but we are working on it to support more aligners)
 
   --deltaPSI DELTAPSI   Delta PSI cutoff. i.e., significant event must show
                         bigger deltaPSI than this cutoff [default = 0.05]
