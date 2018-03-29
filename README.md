@@ -184,6 +184,7 @@ See details in [the example file](https://github.com/UofLBioinformatics/seekCRIT
 | FDR							                |               FDR           												                             |
 
 To calculate the significane of differentially expressed circular RNAs, use the criteria:
+
 1 At least 5% changes in percent back-spliced in (PBI) or |deltaPBI|>=5%
 2 FDR < 0.05
 ## License
