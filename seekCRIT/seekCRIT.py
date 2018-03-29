@@ -22,7 +22,7 @@ parser.add_argument('-gtf', '--gtf', dest='gtf', required=True, help='The gtf an
 parser.add_argument('-o', '--output', dest='outDir', required=True, help='Output directory');
 parser.add_argument('-t', '--readType', dest='readType', required=True, choices=['SE','PE'], help='Read type. SE for Single-end read, PE for Paired-end read');
 #parser.add_argument('-len', '--readLength', dest='readLength', required=True, type=int, choices=range(1,10000), help='Read length. Positive integer');
-parser.add_argument('--aligner', type=str, dest='aligner', required=True, help='Aligner to use')
+parser.add_argument('--aligner', type=str, dest='aligner', help='Aligner to use')
 parser.add_argument('--genomeIndex', type=str, dest='genomeIndex', required=True, help='Genome indexes for the aligner')
 parser.add_argument('-fa', '--fasta', type=str, dest='fasta', required=True, help='Genome sequence. e.g., hg38.fa')
 
