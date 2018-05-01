@@ -37,7 +37,7 @@ git clone https://github.com/UofLBioinformatics/seekCRIT.git
 cd seekCRIT
 ```
 
-2 Install required packages
+2 Install required packages (Some prerequisite packages might require admin access rights. Please contact your system admin to install such packages.)  
 ```bash
 pip3 install -r Prerequisites.txt
 ```
