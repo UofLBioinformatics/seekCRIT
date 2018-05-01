@@ -145,7 +145,7 @@ logging.debug("#################################################################
 
 if refseq==None:
     logging.debug("converting gtf file to RefSeq file ");
-    cmd = pythonPath + ' bin/GTFtoREFSEQ.py '+ gtf +' refseq.txt'
+    cmd = pythonPath +' '+ binPath+ '/GTFtoREFSEQ.py '+ gtf +' refseq.txt'
     oFile.write('######    converting gtf file to RefSeq file  #####\n'+cmd+'\n#\n');
     oFile.flush();
     status,output=subprocess.getstatusoutput(cmd);
@@ -297,7 +297,7 @@ def detectCircRNAs():  ## detecting circular RNAs from chimeric junctions
     rTempFolder = s1rPath+str(rr+1);
     cjn = rTempFolder+'/Chimeric.out.junction'; ## chimeric junction name from STAR aligner
    
-    cmd = pythonPath +' bin/circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
+    cmd = pythonPath +' '+ binPath+ '/circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
 
     oFile.write('######  detecting circular RNAs for sample_1, replicate_'+ str(rr+1)+'#####\n'+cmd+'\n#\n');
     oFile.flush();
@@ -315,7 +315,7 @@ def detectCircRNAs():  ## detecting circular RNAs from chimeric junctions
     cjn = rTempFolder+'/Chimeric.out.junction'; ## chimeric junction name from STAR aligner
 
 
-    cmd = pythonPath +' bin/circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
+    cmd = pythonPath +' '+ binPath+ '/circ_detection.py -j '+cjn+' -g '+fasta+' -r '+refseq+' -o '+ rTempFolder+'/circ.output.txt'; 
 
     oFile.write('######  detecting circular RNAs for sample_2, replicate_'+ str(rr+1)+'#####\n'+cmd+'\n#\n');
     oFile.flush();
@@ -366,7 +366,7 @@ def processCircRNAs():  ## processing circular RNAs from two sample groups
     bam = rTempFolder+'/Aligned.sortedByCoord.out.bam'
     bam_2=bam_2+','+bam;
 	
-  cmd= pythonPath + ' bin/processCIRC.BAM.py '+ circ_1 +' '+circ_2+' '+bam_1+' '+bam_2+' '+str(highConfidence)+' '+finalPath+' '+SEPE;
+  cmd= pythonPath +' '+ binPath+ '/processCIRC.BAM.py '+ circ_1 +' '+circ_2+' '+bam_1+' '+bam_2+' '+str(highConfidence)+' '+finalPath+' '+SEPE;
   oFile.write('######  processing circular RNAs   #####\n'+cmd+'\n#\n');
   oFile.flush();
   status,output=subprocess.getstatusoutput(cmd);
