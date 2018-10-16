@@ -13,6 +13,7 @@ from distutils.version import LooseVersion
 
 seekCRIT_ver = "0.0.2";
 
+
 ### checking out the number of arguments
 parser = argparse.ArgumentParser(description='Identifying and Characterizing Differentially Spliced circular RNAs between two samples');
 
