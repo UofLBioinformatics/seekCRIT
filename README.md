@@ -12,9 +12,15 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 ## A schematic flow shows the pipeline
 ![pipeline](https://github.com/UofLBioinformatics/seekCRIT/blob/master/flow.jpg)
 
-## Different Junction Counts (linear junction counts and circular junction counts)
-![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/Fig.3.differentJunctionCounts.tif)
+## Different Junction Counts (linear junction counts and circular junction counts) used in the circular RNA expression level estimation.
+![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/differentJunctionCounts.jpg)
 
+## Percent Back-spliced In (PBI) estimation
+![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/PBI.calculation.jpg)
+
+
+## Example output (linear junction counts and circular junction counts)
+![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/differentJunctionCounts.jpg)
 
 ## Prerequisites
 
@@ -192,6 +198,11 @@ To calculate the significane of differentially expressed circular RNAs, use the 
 - At least 5% changes in percent back-spliced in (PBI) or |deltaPBI|>=5%
 
 - FDR < 0.05
+
+
+
+
+
 ## License
 
 Copyright (C) 2017 .  See the [LICENSE](https://github.com/UofLBioinformatics/seekCRIT/blob/master/LICENSE)
