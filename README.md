@@ -21,7 +21,7 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 
 ## Example PBI calculation for a differentially expressed circular RNA. 
 circular RNA derived from exon 2 of Cdp gene, Rat, Hippocampus, Somata and Neuropil. 
-This circular RNA is highly expressed in Neuropil than Somata.
+This circular RNA is highly expressed in Neuropil (31.9%) than Somata (11.9%).
 ![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/example.result.Cpd.Hippocampus.jpg)
 
 ## Prerequisites
