@@ -13,7 +13,7 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 ![pipeline](https://github.com/UofLBioinformatics/seekCRIT/blob/master/flow.jpg)
 
 ## Different Junction Counts (linear junction counts and circular junction counts)
-##![pipeline](https://github.com/UofLBioinformatics/seekCRIT/blob/master/Fig.3.differentJunctionCounts.tiff)
+![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/Fig.3.differentJunctionCounts.tif)
 
 
 ## Prerequisites
