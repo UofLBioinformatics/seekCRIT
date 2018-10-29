@@ -15,8 +15,7 @@ Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php
 ## Different Junction Counts (linear junction counts and circular junction counts) used in the circular RNA expression level estimation.
 ![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/differentJunctionCounts.jpg)
 
-## Percent Back-spliced In (PBI) calculation
-circular junction counts / all junction counts
+## Percent Back-spliced In (PBI) calculation (circular junction counts with respect to all junction counts)
 ![DifferentJunctionCounts](https://github.com/UofLBioinformatics/seekCRIT/blob/master/PBI.calculation.jpg)
 
 
