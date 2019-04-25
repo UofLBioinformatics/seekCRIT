@@ -5,7 +5,7 @@ seek for circular RNA in transcriptome (identifies deferentially expressed circR
 
 Version: v1.0.0.b
 
-Last Modified: 2018-10-29
+Last Modified: 2019-04-25
 
 Authors: [Bioinformatics Lab](http://bioinformatics.louisville.edu/lab/index.php), University of Louisville, [Kentucky Biomedical Research Infrastructure Network (KBRIN)](http://louisville.edu/research/kbrin/)
 
