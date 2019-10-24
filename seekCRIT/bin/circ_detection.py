@@ -244,13 +244,15 @@ def find_cirRNAS(ref, junc_file, genome_fa,outPath,t):
                             offsets = offsets + str(starts[i + 1]-starts[0]) + ','
 
                         key = ':'.join([chr, strand, str(starts[0]), str(ends[-1]), sizes, offsets]);
+                        donor=genome_fa.fetch(chr, ends[-1], ends[-1]+2)
+                        acceptor=genome_fa.fetch(chr, starts[0]-2, starts[0])
                         if key not in circular_RNAs:
                             output.write(
                                 chr + '\t' + str(starts[0]) + '\t' + str(ends[-1]) + '\t' + 'circular_RNA/' + str(
                                     reads) + '\t' + flag + '\t' + strand + '\t' + str(starts[0]) + '\t' +
                                 str(starts[0]) + '\t' + '0,0,0' + '\t' + str(num_exons) + '\t' +
                                 sizes + '\t' + offsets + '\t' + str(
-                                    reads) + '\t' + circtype + '\t' + gene_id + '\t' + iso_id + '\t' + exons_index + '\t' + flank_intron + '\t' + '\n');
+                                    reads) + '\t' + circtype + '\t' + gene_id + '\t' + iso_id + '\t' + exons_index + '\t' + flank_intron + '\t' + donor+'-'+acceptor + '\t' + '\n');
 
                             value = [1];
                             circular_RNAs[key] = value;
