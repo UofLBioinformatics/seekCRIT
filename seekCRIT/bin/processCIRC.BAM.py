@@ -314,7 +314,7 @@ def writeResult(): ## write out result
     myP = fp[outKey]; myFDR=fdr[outKey]; 
 
     outStr = '\t'.join([ele[0],ele[1],ele[2],ele[5],ele[9],ele[10],ele[11],ele[13],ele[14],ele[15],ele[16],ele[17]]);
-    outStr+= '\t'+c1Str+'\t'+l1Str+'\t'+c2Str+'\t'+l2Str+'\t'+str(PBI_1)+'\t'+str(PBI_2)+'\t'+str(deltaPBI)+'\t'+str(myP)+'\t'+str(myFDR);
+    outStr+= '\t'+c1Str+'\t'+l1Str+'\t'+c2Str+'\t'+l2Str+'\t'+str(PBI_1)+'\t'+str(PBI_2)+'\t'+str(deltaPBI)+'\t'+str(myP)+'\t'+str(myFDR)+'\t'+ele[18];
     outFile.write(outStr+'\n');
 
   outFile.close();
