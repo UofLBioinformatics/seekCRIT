@@ -167,7 +167,7 @@ def doSTARMapping(): ## do STAR mapping
 
   for rr in range(0,len(sample_1)): ## for each replicate of sample_1
     rTempFolder = s1rPath+str(rr+1);
-    cmd = 'STAR --chimSegmentMin 2 --outFilterMismatchNmax 3 --runThreadN '+str(threadN)+' --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate --twopass1readsN 600000000 ';
+    cmd = 'STAR --twopassMode Basic --chimSegmentMin 2 --outFilterMismatchNmax 3 --runThreadN '+str(threadN)+' --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate --twopass1readsN 600000000 ';
     cmd += ' --genomeDir '+genomeIndex+ ' --sjdbGTFfile ' + gtf;
     cmd += ' --outFileNamePrefix ' + rTempFolder + '/ --readFilesIn ';
     if SEPE=='PE': ## paired-end
@@ -188,7 +188,7 @@ def doSTARMapping(): ## do STAR mapping
   logging.debug("mapping the second sample");
   for rr in range(0,len(sample_2)): ## for each replicate of sample_2
     rTempFolder = s2rPath+str(rr+1);
-    cmd = 'STAR --chimSegmentMin 2 --outFilterMismatchNmax 3 --runThreadN '+str(threadN)+' --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate ';
+    cmd = 'STAR --twopassMode Basic --chimSegmentMin 2 --outFilterMismatchNmax 3 --runThreadN '+str(threadN)+' --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate ';
     cmd += ' --genomeDir '+genomeIndex+ ' --sjdbGTFfile ' + gtf;
     cmd += ' --outFileNamePrefix ' + rTempFolder + '/ --readFilesIn ';
     if SEPE=='PE': ## paired-end
